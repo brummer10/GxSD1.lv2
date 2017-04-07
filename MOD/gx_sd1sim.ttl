@@ -50,7 +50,8 @@
     lv2:minorVersion 34;
     lv2:microVersion 0;
 
-  guiext:ui <http://guitarix.sourceforge.net/plugins/gx_sd1sim_gui#_sd1sim_>;
+    mod:brand "Guitarix" ;
+    mod:label "GxSd1" ;
     
 rdfs:comment """
 
@@ -76,7 +77,7 @@ rdfs:comment """
         lv2:index 2 ;
         lv2:symbol "BYPASS" ;
         lv2:name "BYPASS" ;
-        lv2:default 0.0 ;
+        lv2:default 1.0 ;
         lv2:minimum 0.0 ;
         lv2:maximum 1.0 ;
         lv2:designation lv2:enabled;
@@ -110,9 +111,3 @@ rdfs:comment """
         lv2:minimum 100.0 ;
         lv2:maximum 1000.0 ;
     ] .
-
-<http://guitarix.sourceforge.net/plugins/gx_sd1sim_gui#_sd1sim_>
-  a guiext:GtkUI;
-  guiext:binary <gx_sd1sim_ui.so>;
-  guiext:requiredFeature guiext:makeResident;
-  .
